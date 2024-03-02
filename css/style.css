@@ -75,8 +75,14 @@ header{
         color:#0065FC ;
         border-top: solid #0065FC;
         padding-top: 5px;
-        
         }
+    /****h1 et paragraphe****/
+h1{
+    font-size: 25px;
+    }
+    P{
+    font-size: 20px;
+    }
     
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
