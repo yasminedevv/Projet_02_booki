@@ -57,7 +57,34 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
+/*** header ***/
+header{
+    display: flex;
+    justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 50px ; 
+        margin: 20px;
+        font-size: 23px;
+        }
+         
+        nav a:hover  {
+        color:#0065FC ;
+        border-top: solid #0065FC;
+        padding-top: 5px;
+        }
+    /****h1 et paragraphe****/
+h1{
+    font-size: 25px;
+    }
+    P{
+    font-size: 20px;
+    }
+   /***bare de recherche ***/
+    
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
