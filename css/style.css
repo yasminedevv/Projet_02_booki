@@ -57,33 +57,77 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
 /*** header ***/
-header{
+header {
     display: flex;
     justify-content: space-between;
-    }
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 50px ; 
-        margin: 20px;
-        font-size: 23px;
-        }
-         
-        nav a:hover  {
-        color:#0065FC ;
-        border-top: solid #0065FC;
-        padding-top: 5px;
-        }
-    /****h1 et paragraphe****/
-h1{
+}
+header img{
+    height: 18px;
+    padding: 5px;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 50px;
+    margin: 10px;
+    font-size: 23px;
+    list-style: none;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: solid #0065FC;
+    padding-top: 10px;
+}
+
+/****h1 et paragraphe****/
+h1,p{
     font-size: 25px;
-    }
-    P{
     font-size: 20px;
-    }
-   /***bare de recherche ***/
+}
+
+/***bare de recherche ***/
+.search-form {
+    display: flex;
+    height: 52px;
+}
+.icon-location {
+    display: flex;
+    background-color:#F2F2F2;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px 0 0 15px; 
+}
+.fa-solid{
+    color: black;
+}
+
+input{
+    outline: none;
+    border: 2px solid #F2F2F2;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+    width: 200px;   
+}
+::placeholder{
+    color: black;
+}
+#search-text, #search-icon {
+    background: #0065FC;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 20px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;}
     
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
