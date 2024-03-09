@@ -106,7 +106,6 @@ h1,p{
 .fa-solid{
     color: black;
 }
-
 input{
     outline: none;
     border: 2px solid #F2F2F2;
@@ -128,6 +127,43 @@ input{
     padding: 0 20px;
     border-radius: 0 15px 15px 0;
     cursor: pointer;}
+
+    .filter-search button {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        border: 2px solid rgb(204, 204, 204);
+        border-radius: 50px;
+        background: none;
+        padding: 13px 20px;
+        margin: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .filter-search button:hover {
+        background: #DEEBFF;
+    }
+    .filter-search i {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .icon-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .icon-info i {
+        display: flex;
+        font-size: 20px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 50%;
+        min-width: 25px;
+        min-height: 25px;
+        justify-content: center;
+        align-items: center;
+       
+    }
 
     
 /****** Hebergements And Populaires ***********/
