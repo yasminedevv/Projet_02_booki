@@ -338,7 +338,29 @@ input{
 #activities .card-title {
     margin: 0 20px;
 }
+/*footer**/
+footer {
+    background: #F2F2F2;
+    padding: 20px;
+}
+.footer-container {
+display: flex;
+width: 90%;
+max-width: 1000px;
+justify-content: space-between;
 
+}
+footer h4 {
+font-size: 1.2rem;
+}
+footer li, footer h4 {
+margin-bottom: 15px;
+transition: 0.2s;
+list-style: none;
+}
+footer li:hover {
+color: #0065FC; 
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
