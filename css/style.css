@@ -42,11 +42,6 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
 .card {
     background-color: white;
     border-radius: 2rem;
@@ -56,7 +51,6 @@ a {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
 }
 
 .card img {
@@ -100,7 +94,7 @@ li {
     font-size: 1.6rem;
 }
 
-.icon-info p {
+.info-bar p {
     font-size: 1.6rem;
 }
 
@@ -214,55 +208,92 @@ h1,p{
 }
 
 /***bare de recherche ***/
-.search {
-    margin: 30px 0;
-}
-.search p {
-    margin: 10px 0 40px 0;
-}
-.search-form {
+.search-bar {
     display: flex;
-    height: 52px;
-}
-.icon-location {
-    display: flex;
-    background-color:#F2F2F2;
-    align-items: center;
-    padding: 20px;
-    border-radius: 15px 0 0 15px; 
-    justify-content: center;
 }
 
-input{
+.search-icon {
+    display: inline-block;
+    display: none;
+}
+
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3.5rem
+}
+
+.icon-info-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.fa-info-circle {
+    border-color: #D9D9D9;
+    color: #0065FC;
+}
+
+.icon-box {
+    width: 5rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem 0 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-location-dot {
+    color: initial;
+}
+
+.search-city {
+    width: fit-content;
+}
+
+.search-city input {
+    width: 18rem;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 1.5rem;
     outline: none;
-    border: 2px solid #F2F2F2;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: start;
-    padding: 0 20px;
-    width: 200px;   
 }
-::placeholder{
+
+.search-city input::placeholder {
     color: black;
+
 }
-#search-text, #search-icon {
-    background: #0065FC;
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0 20px;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;}
-    #search-icon {
-        display: none;
-    }
-    #search-icon i {
-        color: white;
-    }
-    #search-icon {
-        display: none;
-    }
+
+.search-icon {
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-magnifying-glass {
+    color: #ffffff;
+}
+
+.search {
+    width: 14rem;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
     .filter-search {
         margin: 30px 0;
         display: flex;
@@ -310,6 +341,64 @@ input{
         min-width: 25px;
         min-height: 25px;
        
+    }
+
+    .info-bar {
+        display: flex;
+        align-items: center;
+        padding-bottom: 3.5rem
+    }
+    
+    .icon-info-bar {
+        display: flex;
+        align-items: center;
+        border: 1px solid #D9D9D9;
+        width: 2.5rem;
+        height: 2.5rem;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+
+    .main-filter {
+        max-width: 75rem;
+        margin: 3rem 0;
+    }
+    
+    .filter-bar {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .filter-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .filter {
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        border: 2px solid #d9d9d9;
+        border-radius: 4rem;
+        padding: 0 1.5rem;
+        cursor: pointer;
+    }
+    
+    .filter:hover {
+        background-color: #deebff;
+        transition: var(--transi200);
+    }
+    
+    .filter i {
+        margin-right: 1rem;
+    }
+    
+    .filter p {
+        font-size: 1.8rem;
+        font-weight: 700;
     }
 
     
@@ -441,59 +530,100 @@ input{
 .popular-container .card-rating {
     margin-bottom: 0.5rem;
 }
-/**activité**/
 
-#activities {
-    width: 95%;
-    margin: 60px auto;
+/****** Activities ***********/
+
+.activities {
+    margin: 3.5rem 3rem;
 }
+
 .activities-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
 }
+
+.activities-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activities-cards .card {
+    width: 23%;
+    height: 44rem;
+}
+
 .activities-cards img {
     width: 100%;
-    height: 400px;
-    border-radius: 15px 15px 0 0;
+    height: 38rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: none;
 }
-.activities-cards .card {
-    display: flex;
-    flex-direction: column;
+
+.activities-cards .card-content {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.activities-cards .card-subtitle {
+    margin: 0;
+}
+
+.activities-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+/*footer*/
+
+
+.footer ul {
+    list-style: none;
     padding: 0;
 }
-.activities-card-txt {
+
+.footer-nav {
     display: flex;
-    flex-direction: column;
-    height: 60px;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
 }
-#activities .card-title {
-    margin: 0 20px;
-}
-/*footer**/
-footer {
-    background: #F2F2F2;
-    padding: 30px;
-}
+
 .footer-container {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-
-}
-footer h4 {
-font-size: 1.2rem;
+    width: 33%;
+    padding: 2rem;
 }
 
-footer ul li {
-margin-bottom: 14px;
-list-style: none;
-align-items: normal;
+.footer h3 {
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+}
+
+.footer-container ul li {
+    padding: 1.5rem 1.5rem 0;
+}
+footer li :hover{
+    color: #0065FC;
+}    
+
+
+/*Main title, Hebergement title, activités title*/
+
+.hebergements-title,
+.activities-title,
+.h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-footer li:hover {
-color: #0065FC; 
+/* Media queries */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    body {
+        max-width: 1440px;
+    }
 }
