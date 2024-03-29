@@ -1,0 +1,98 @@
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        max-width: 1024px;
+    }
+
+    /*NAV-BAR*/
+
+    .nav-header {
+        height: 8rem;
+    }
+
+    .box-logo {
+        padding: 3rem 0;
+    }
+
+    /*FILTER*/
+
+    .filter-search {
+        display: block;
+    }
+
+    .filter-search h2 {
+        padding-bottom: 2rem;
+    }
+
+    .filter-button {
+        justify-content: space-between;
+    }
+
+    /*HEBERGEMENTS*/
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .button-hebergements {
+        margin: 3rem 0;
+    }
+
+
+    
+
+    /*POPULAR*/
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards{
+        width: 32%;
+    }
+
+    .populaires-cards img {
+        width: 40%;
+    }
+
+    .popular-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 10% ;
+        
+    }
+
+    .popular-container a {
+        width: 30%;
+    }
+
+    .popular-container .card-title {
+        font-size: 14px;
+    }
+
+    .popular-container .card-subtitle {
+        font-size: 13px;
+    }
+
+    /*ACTIVITIES*/
+
+    .activities-cards .card {
+        height: 27rem;
+    }
+
+    .activities-cards img {
+        height: 20rem;
+    }
+}
