@@ -2,7 +2,7 @@
 /* Mobile styles in mobile.css (max-width: 767.98px) */
 
 
-@media screen and (max-width: 767.98px) {
+@media (min-width: 320px)and (max-width: 767.98px) {
 
     /*Général et fontsize*/
 
@@ -90,6 +90,12 @@
         top: 3.5rem;
         left: 0;
     }
+    nav a:hover {
+        color: #0065FC;
+        border-bottom: solid #0065FC;
+        padding-bottom: 10px;
+        border-top: #ffffff;
+    }
 
 
     .nav-bar a::before {
@@ -107,7 +113,7 @@
         flex-direction: column;
         height: fit-content;
     }
-
+    
     .box-logo {
         margin: 3rem;
     }
@@ -358,6 +364,7 @@
         width: 100%;
         height: auto;
         border-radius: 2rem;
+       
     }
 
     .activities-cards img {
