@@ -73,10 +73,12 @@
 
     .header-menu li {
         width:auto;
-        padding:0 60 0 0;
+        padding: 60 0 0  ;
         display: inline-block;
+        
     }
-
+   
+    
     .header-menu li a {
         display: block;
         width: 100%;
