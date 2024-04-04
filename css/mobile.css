@@ -12,6 +12,8 @@
 
     body {
         max-width: 767.98px;
+        min-width: 320px ;
+
     }
 
     .main-container {
@@ -63,51 +65,55 @@
         display: flex;
     }
 
-    .nav-bar {
+    .header-menu {
         align-items: center;
         width: 100%;
-        gap: unset;
+        gap:unset;
     }
 
-    .nav-bar li {
-        text-align: center;
-        width: 50%;
-        padding: 0;
+    .header-menu li {
+        width:auto;
+        padding:0 60 0 0;
+        display: inline-block;
     }
 
-    .nav-bar li a {
+    .header-menu li a {
         display: block;
         width: 100%;
         font-size: 1.6rem;
     }
 
-    .nav-bar a::after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        background-color: #0065FC;
-        width: 0;
-        top: 3.5rem;
-        left: 0;
-    }
-    nav a:hover {
-        color: #0065FC;
-        border-bottom: solid #0065FC;
-        padding-bottom: 10px;
-        border-top: #ffffff;
-    }
 
-
-    .nav-bar a::before {
+    .header-menu a::before {
         content: "";
         position: absolute;
         height: 2px;
         background-color: #f2f2f2;
         width: 0;
-        top: 3.5rem;
+        top: 20rem;
         left: 0;
-        width: 100%;
+     
     }
+    nav a:hover {
+    border-top: none;
+    }
+    .heberg a:hover:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #0065FC;
+        top: 20rem;
+        width: 50%;
+    }
+   .activ a:hover:after {
+    content: "";
+    position:absolute;
+    height: 2px;
+    background-color: #0065FC;
+    top: 20rem;
+    width: calc(100% - 50%);
+    left:calc(100% - 50%);
+   }
 
     .nav-header {
         flex-direction: column;
