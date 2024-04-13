@@ -68,7 +68,6 @@
     .header-menu {
         align-items: center;
         width: 100%;
-        gap:unset;
     }
 
     .header-menu li {
@@ -120,6 +119,9 @@
     .nav-header {
         flex-direction: column;
         height: fit-content;
+    }
+    nav a:hover {
+        padding-top: 10px;
     }
     
     .box-logo {
