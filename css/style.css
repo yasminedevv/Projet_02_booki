@@ -21,7 +21,7 @@ html {
 .fa-solid {
     color: var(--main-color);
 }
-
+/****** Body ***********/
 body {
     display: flex;
     justify-content: center;
@@ -198,7 +198,7 @@ nav ul {
 nav a:hover {
     color: #0065FC;
     border-top: solid #0065FC;
-    padding-top: 10px;
+    padding-top: 28px;
 }
 
 /****h1 et paragraphe****/
@@ -425,7 +425,6 @@ h1,p{
 
 /****** Hebergements ***********/
 
-
 .hebergements-title {
     display: flex;
     justify-content: space-between;
@@ -577,7 +576,6 @@ h1,p{
 
 
 /*footer*/
-
 
 .footer ul {
     list-style: none;
